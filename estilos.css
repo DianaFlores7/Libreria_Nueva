@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body {  /* Fondo */
+    background-image: url("Fondo_liam.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+main {
+    width: 100%;  /* Ancho */
+    padding: 100px;  /*Relleno */
+    margin: auto;    /* centrar un elemento horizontalmente */
+    margin-top: 90px;  /* Margen superior */
+}
+.contenedor_de_todo {
+    width: 100%;
+    height: 1000px;  /* Altura */
+    max-width: 800px;  /* Limita el ancho */
+    margin: auto;
+    position: relative;
+}
+.Caja_registro {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;   /* organizar los elementos dentro de*/
+    justify-content: center;   /*Centra los elementos dentro del contenedor horizontalmente */
+    backdrop-filter: blur(10px); /*Aplica un filtro de desenfoque*/
+    background-color: rgba(131, 48, 179, 0.948);  /*Define un color de fondo */
+    color: rgb(0, 0, 0); /*Color de texto */
+    height: 500px; /* Ajusta este valor para hacer la caja más larga */
+}
+.Caja_registro button {
+    padding: 18px 40px; /* Relleno de boton */
+    border: 2px solid rgb(5, 64, 243);
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgb(70, 23, 222);
+    outline: none;
+    transition: all 300ms;
+}
+.Caja_registro button:hover {
+    background: white;  /*Cambia el fondo del botón a blanco cuando se pasa el mouse por encima */
+    color: black;  /* Cambia el color del texto a negro cuando el mouse está sobre el botón.*/
+}
+  /*formularios*/
+.contenedor_registro{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 380px;
+    position: relative;
+    top: 100px;
+    left: -250px;
+}
+
+.contenedor_registro form {
+    width: 100%;
+    padding: 88px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+.contenedor_registro form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: cadetblue;
+}
+
+.contenedor_registro form input {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+.contenedor_registro form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: cadetblue;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+  /*  busqueda*/
+  .Caja_busqueda {
+    width: 100%; /* Ajusta este valor para hacer la caja menos ancha */
+    padding: 10px 20px;
+    display: flex;   /* Organiza los elementos dentro del contenedor */
+    justify-content: flex-end;   /* Centra los elementos dentro del contenedor horizontalmente */
+    backdrop-filter: blur(10px); /* Aplica un filtro de desenfoque */
+    background-color: rgba(255, 255, 255, 0); /* Define un color de fondo */
+    color: rgb(0, 0, 0); /* Color de texto */
+    height: 10px; /* Ajusta este valor para hacer la caja más larga */
+    position: relative;
+    top: 0px;  /* Mueve el elemento 10px hacia abajo */
+     left: 320px; /* Mueve el elemento 20px hacia la derecha */ /* Asegúrate de que la posición sea relativa */
+    right: 800; /* Mueve la caja al lado derecho */
+    top: -320px;  /* Mueve el elemento 20px hacia arriba *
+    margin-right: 20px; /* Añadir margen a la derecha si lo deseas */
+}
+
+.Caja_busqueda button {
+    padding: 18px 40px; /* Relleno de botón */
+    border: 2px solid rgb(5, 64, 243);
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgb(70, 23, 222);
+    outline: none;
+    transition: all 300ms;
+}
+/* Efecto hover en el botón */
+.Caja_busqueda button:hover {
+    background: white;
+    color: black;
+}
+.contenedor_busqueda {
+    display: flex;
+    align-items: center;
+    width: 600%;
+    max-width: 380px;
+    position: relative; /* Lo coloca en una posición específica */
+    top: 100px; /* Ajusta para que esté alineado correctamente */
+    left: 000; /* Lo mueve al lado izquierdo de la pantalla */
+    right: 800; /* Mueve la caja al lado derecho */
+    margin-left: 20px;  /* Añadir margen a la izquierda si lo deseas */
+}
+
+/* Estilo para el formulario dentro del contenedor de búsqueda */
+.contenedor_busqueda form {
+    width: 100%;
+    padding: 88px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+/* Estilo para el encabezado dentro del formulario */
+.contenedor_busqueda form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: cadetblue;
+}
+
+/* Estilo para los campos de entrada dentro del formulario */
+.contenedor_busqueda form input {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Estilo para el botón dentro del formulario de búsqueda */
+.contenedor_busqueda form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: cadetblue;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+/* CAJA DE ACCESO*/
+.Caja_acceso {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;   /* organizar los elementos dentro de*/
+    justify-content: center;   /*Centra los elementos dentro del contenedor horizontalmente */
+    backdrop-filter: blur(10px); /*Aplica un filtro de desenfoque*/
+    background-color: rgba(255, 255, 255, 0); /* Define un color de fondo */
+    color: rgb(235, 222, 222); /*Color de texto */
+    position: relative; /* Asegúrate de que la posición sea relativa */
+    left: 50px; /* Ajusta este valor para mover más hacia la derecha */
+    margin-top: 20px; /* Agrega un margen superior para separar las cajas */
+}
+.Caja_acceso button {
+    padding: 18px 40px; /* Relleno de boton */
+    border: 2px solid 
+    rgb(255, 255, 255);
+    background: rgb(252, 252, 255);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    color:   rgba(131, 48, 179, 0.948);;
+    outline: none;
+    transition: all 300ms;
+}
+.Caja_acceso button:hover {
+    background: white;  /*Cambia el fondo del botón a blanco cuando se pasa el mouse por encima */
+    color: black; 
+}
+
+
+
+
+@media screen and (max-width: 850px){
+    main {
+
+         margin-top: 50px;}	
+
+         .Caja_registro{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+
+      }	
+
+    .Caja_registro div{
+        margin:  0px;
+        position: absolute;
+    }
+
+    /* formulario */
+    .contenedor_registro{
+        top: -10px;
+        left: -5px;
+       margin: auto;
+    }
+      .contenedor_registro form{
+          position: relative;
+      }
+    }
