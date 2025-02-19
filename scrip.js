@@ -6,4 +6,4 @@ var Caja_acceso = document.querySelector(".Caja_acceso");
 
 function registro(){
     
-}	
+}
