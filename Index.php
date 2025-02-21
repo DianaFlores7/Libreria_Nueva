@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Libreria</title>
+    <title>Mi Librería</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <main>
-
+    <h1>Libreria Liam  </h1>
+        <nav>    <!-- Se usa para agrupar enlaces de navegación, como menús o barras de navegación.-->
+            <ul>   <!--Agrupa elementos de lista sin un orden específico.-->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Libros</a></li>
+                <li><a href="#">Registrar</a></li>
+                </li>             
+            </ul>
+        </nav>
     <div class="contenedor_de_todo">  
-        <h1>Libreria LIAAM</h1>
-
+        
         <div class="Caja_registro">   <!--Parte del diseño visual, fondo o texto informativo.-->
             <div class="contenedor_registro">  <!--Contiene el formulario, donde el usuario realmente interactúa.-->
             <form action="Insertar_conexion.php" method="POST">              <!-- Define el alcance del formulario: Todo lo que esté  es parte del formulario, y los datos que se envían -->
