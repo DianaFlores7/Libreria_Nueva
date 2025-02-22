@@ -36,24 +36,19 @@
             </div>
         </div>
 
-        <div class="contenedor_registro">
-            <div class="Caja_registro1">
-                <h2>Registrar Libros Nuevos</h2>
-                <button id="irARegistrar">Ir a Registrar</button> <!-- Cambiar a un botón normal -->
-            </div>
-        </div>
+       
+            <div class="contenedor_registro1">  <!--Contiene el formulario, donde el usuario realmente interactúa.-->
+            <div class="Caja_registro1">  
+            <form action="registrar_libros.php" method="POST">              <!-- Define el alcance del formulario: Todo lo que esté  es parte del formulario, y los datos que se envían -->
+                <h2>Registrar libros</h2> <!--Más grande y en negrita -->
 
-    <!-- Formulario de búsqueda por título -->
-    <div class="Caja_busqueda">
-        <div class="contenedor_busqueda"> 
-            <form action="mostrar_datos.php" method="post"> 
-                <h2>Buscar Libro</h2>
-                <label for="busqueda">Buscar por Título:</label>
-                <input type="text" id="busqueda" name="busqueda" required>
-                <button type="submit">Buscar</button>
+                <button type="submit">Registrar</button> 
             </form>
         </div>
-    </div>
+    </div
+                </form>
+            </div>
+        </div>
 
     </main>
     <script src="scrip.js"></script>

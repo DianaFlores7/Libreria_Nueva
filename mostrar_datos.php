@@ -6,12 +6,22 @@
     <title>Mostrar Datos</title>
     <!-- Incluye DataTables CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <!-- Incluye tus estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="estilos.css">
     <!-- Incluye jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Incluye DataTables JS -->
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="mostrar_datos.php">Libros</a></li>
+            <li><a href="registrar.php">Registrar</a></li>
+            <li><a href="Editar_libros.php">Editar</a></li>
+        </ul>
+    </nav>
 <?php
 $conexion = mysqli_connect("localhost", "root", "", "libreria_registro");
 if (!$conexion) {
