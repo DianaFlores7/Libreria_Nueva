@@ -37,20 +37,16 @@
         </div>
 
        
-            <div class="contenedor_registro1">  <!--Contiene el formulario, donde el usuario realmente interactúa.-->
+        <div class="contenedor_registro1">  <!--Contiene el formulario, donde el usuario realmente interactúa.-->
             <div class="Caja_registro1">  
-            <form action="registrar_libros.php" method="POST">              <!-- Define el alcance del formulario: Todo lo que esté  es parte del formulario, y los datos que se envían -->
-                <h2>Registrar libros</h2> <!--Más grande y en negrita -->
-
-                <button type="submit">Registrar</button> 
-            </form>
-        </div>
-    </div
+                <form action="registrar_libros.php" method="POST">              <!-- Define el alcance del formulario: Todo lo que esté  es parte del formulario, y los datos que se envían -->
+                    <h2>Añadir libros registrados</h2> <!--Más grande y en negrita -->
+                    <button type="submit">Registrar</button> 
                 </form>
             </div>
-        </div>
+        </div> <!-- Aquí faltaba cerrar la etiqueta div correctamente -->
 
-    </main>
+    
     <script src="scrip.js"></script>
     <script>
         // Agregar evento de clic al botón
@@ -65,5 +61,6 @@
             $('#example').DataTable();
         });
     </script>
+     </main>
 </body>
 </html>

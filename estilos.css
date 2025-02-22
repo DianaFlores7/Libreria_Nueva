@@ -48,7 +48,7 @@ a:hover { /* al pasar mouse */
     margin: top 50px;
     width: 960px;
     height: 800px; 
-    background-color: #f3f3f3ec; 
+    backdrop-filter: blur(10px);
     }
   
   
@@ -72,13 +72,14 @@ a:hover { /* al pasar mouse */
   .Caja_bienvenida p {
       margin-top: 10px; /* Ajusta el valor según sea necesario */
   }
-  /* CAJA DE PRE REGISTRO*/
+  
+  /* CAJA DE Acceso*/
  .contenedor_acceso{
     margin: auto;
      margin: top 500px;
      padding:  20px;
      width: 960px;
-     height: 300px; 
+     height: 200px; 
      background-color: #f89afaec; 
        }   
        
@@ -161,6 +162,53 @@ a:hover { /* al pasar mouse */
        margin-bottom: 20px;
        color: rgb(172, 22, 8);
    }
+
+   /* CAJA DE PRE REGISTRO*/
+ .contenedor_registro1{
+    margin: auto;
+     margin: top 500px;
+     padding:  20px;
+     width: 960px;
+     height: 300px; 
+     background-color: #e2f375ec; 
+       }   
+       
+       .Caja_registro1 {
+           width: 960px; /* Ajusta este valor según sea necesario */
+           padding: 10px 20px;
+           display: flex; /* Organiza los elementos dentro del contenedor */
+           justify-content: center; /* Centra los elementos dentro del contenedor horizontalmente */
+           color: rgb(0, 0, 0); /* Color de texto */
+           height: 500px; /* Ajusta este valor para hacer la caja más larga */
+           margin: 20px 0; /* Agrega un margen superior e inferior */
+         }
    
-  
- 
+   .Caja_registro1 form button {
+       padding: 10px 40px;
+       margin-top: 40px;
+       border: none;
+       font-size: 14px;
+       background: rgb(238, 238, 238);
+       color: rgb(9, 4, 4);
+       background: rgb(238, 238, 238);
+       color: rgb(9, 4, 4);
+       cursor: pointer;
+       outline: none;
+       position: relative; /* Permite mover el botón con top, left, right, bottom */
+       top: 45px; /* Mueve el botón 10px hacia abajo */
+       left: 50px;  /* Mueve el botón 20px hacia la derecha */
+   }
+   
+   .Caja_registro1 button:hover {
+       background: white;
+       color: black;
+   }
+   
+   .contenedor_registro form h2 {
+       font-size: 100px;
+       text-align: center;
+       margin-bottom: 20px;
+       color: rgb(172, 22, 8);
+   }
+
+
