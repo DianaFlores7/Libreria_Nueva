@@ -14,7 +14,7 @@
     <nav>    <!-- Se usa para agrupar enlaces de navegación, como menús o barras de navegación.-->
         <ul>   <!--Agrupa elementos de lista sin un orden específico.-->
             <li><a href="index.php">Inicio</a></li>
-            <li><a href="libros.php">Libros</a></li>
+            <li><a href="mostrar_datos.php">Libros</a></li>
             <li><a href="registrar.php">Registrar</a></li> 
             <li><a href="Editar_libros.php">Editar</a></li>
         </ul>
