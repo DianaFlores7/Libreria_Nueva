@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Librería</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 </head>
 <body>
     <main>
@@ -42,8 +43,6 @@
             </div>
         </div>
 
-        
-
     <!-- Formulario de búsqueda por título -->
     <div class="Caja_busqueda">
         <div class="contenedor_busqueda"> 
@@ -62,6 +61,13 @@
         // Agregar evento de clic al botón
         document.getElementById('irARegistrar').addEventListener('click', function() {
             document.getElementById('registro').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
         });
     </script>
 </body>
