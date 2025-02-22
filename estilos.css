@@ -46,92 +46,86 @@ a{  /*LETRAS DE MENU*/
 a:hover{ /* Al pasar mose*/
     color: rgb(38, 178, 171);        /*COLOR AL PASAR EL MOUSE*/
      text-decoration: underline;  /*SUBRAYADO AL PASAR EL MOUSE*/
-}
+} 
+
+
+ .contenedor_de_todo {
+  margin: auto;
+  margin: top 50px;
+  width: 960px;
+  height: 800px; 
+  background-color: #f0f0f0ec; 
+  }
 
 
 
-
-
-
-
-
-
-.contenedor_de_todo {
-    width: 100%;
-    height: 1000px;  /* Altura */
-    max-width: 800px;  /* Limita el ancho */
-    margin: auto;
-    position: relative;
-}
-.Caja_registro {
-    width: 100%;
-    padding: 10px 20px;
+.Caja_bienvenida {
+    width: 960px;
+    padding:  20px;
     display: flex;   /* organizar los elementos dentro de*/
-    justify-content: center;   /*Centra los elementos dentro del contenedor horizontalmente */
-    backdrop-filter: blur(10px); /*Aplica un filtro de desenfoque*/
-    background-color: rgba(131, 48, 179, 0.948);  /*Define un color de fondo */
+    justify-content: flex-start;   /*Centra los elementos dentro del contenedor horizontalmente */
+    background-color: rgba(245, 245, 245, 0.948);  /*Define un color de fondo */
     color: rgb(0, 0, 0); /*Color de texto */
-    height: 500px; /* Ajusta este valor para hacer la caja más larga */
-}
-.Caja_registro button {
-    padding: 18px 40px; /* Relleno de boton */
-    border: 2px solid rgb(5, 64, 243);
-    background: transparent;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    color: rgb(70, 23, 222);
-    outline: none;
-    transition: all 300ms;
-}
-.Caja_registro button:hover {
-    background: white;  /*Cambia el fondo del botón a blanco cuando se pasa el mouse por encima */
-    color: black;  /* Cambia el color del texto a negro cuando el mouse está sobre el botón.*/
-}
-  /*formularios*/
-.contenedor_registro{
-    display: flex;
-    align-items: center;
-    width: 90%;
-    max-width: 380px;
-    position: relative;
-    top: 100px;
-    left: -250px;
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+    margin: top 50px; /* Centra el contenedor horizontalmente y agrega un margen superior e inferior */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra para darle profundidad */
+} 
+ .Caja_bienvenida h2 {
+    margin-bottom: 0px; /* Ajusta el valor según sea necesario */
 }
 
-.contenedor_registro form {
-    width: 100%;
-    padding: 88px 20px;
-    background: white;
-    position: absolute;
-    border-radius: 20px;
-}
-.contenedor_registro form h2 {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 20px;
-    color: cadetblue;
+.Caja_bienvenida p {
+    margin-top: 10px; /* Ajusta el valor según sea necesario */
 }
 
-.contenedor_registro form input {
-    width: 100%;
-    padding: 20px;
-    margin-top: 20px;
-    border: none;
-    background: #f2f2f2;
-    font-size: 16px;
-    outline: none;
-}
-.contenedor_registro form button {
+/* CAJA DE ACCESO*/
+ .contenedor_acceso {
+ margin: auto;
+  margin: top 500px;
+  padding:  20px;
+  width: 960px;
+  height: 300px; 
+  background-color: #f89afaec; 
+    }   
+    
+    .Caja_acceso {
+        width: 960px; /* Ajusta este valor según sea necesario */
+        padding: 10px 20px;
+        display: flex; /* Organiza los elementos dentro del contenedor */
+        justify-content: center; /* Centra los elementos dentro del contenedor horizontalmente */
+        backdrop-filter: blur(10px); /* Aplica un filtro de desenfoque */
+        color: rgb(0, 0, 0); /* Color de texto */
+        height: 500px; /* Ajusta este valor para hacer la caja más larga */
+        margin: 20px 0; /* Agrega un margen superior e inferior */
+      }
+
+.Caja_acceso form button {
     padding: 10px 40px;
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: cadetblue;
-    color: white;
+    background: rgb(238, 238, 238);
+    color: rgb(9, 4, 4);
     cursor: pointer;
     outline: none;
+    position: relative; /* Permite mover el botón con top, left, right, bottom */
+    top: 45px; /* Mueve el botón 10px hacia abajo */
+    left: -230px; /* Mueve el botón 20px hacia la derecha */
 }
+
+.Caja_acceso button:hover {
+    background: white;
+    color: black;
+}
+
+.contenedor_acceso form h2 {
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(172, 22, 8);
+}
+
   /*  busqueda*/
   .Caja_busqueda {
     width: 100%; /* Ajusta este valor para hacer la caja menos ancha */
@@ -218,64 +212,7 @@ a:hover{ /* Al pasar mose*/
     outline: none;
 }
 
-/* CAJA DE ACCESO*/
-.Caja_acceso {
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;   /* organizar los elementos dentro de*/
-    justify-content: center;   /*Centra los elementos dentro del contenedor horizontalmente */
-    backdrop-filter: blur(10px); /*Aplica un filtro de desenfoque*/
-    background-color: rgba(255, 255, 255, 0); /* Define un color de fondo */
-    color: rgb(235, 222, 222); /*Color de texto */
-    position: relative; /* Asegúrate de que la posición sea relativa */
-    left: 50px; /* Ajusta este valor para mover más hacia la derecha */
-    margin-top: 20px; /* Agrega un margen superior para separar las cajas */
-}
-.Caja_acceso button {
-    padding: 18px 40px; /* Relleno de boton */
-    border: 2px solid 
-    rgb(255, 255, 255);
-    background: rgb(252, 252, 255);
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    color:   rgba(131, 48, 179, 0.948);;
-    outline: none;
-    transition: all 300ms;
-}
-.Caja_acceso button:hover {
-    background: white;  /*Cambia el fondo del botón a blanco cuando se pasa el mouse por encima */
-    color: black; 
-}
 
 
 
 
-@media screen and (max-width: 850px){
-    main {
-
-         margin-top: 50px;}	
-
-         .Caja_registro{
-        max-width: 350px;
-        height: 300px;
-        flex-direction: column;
-        margin: auto;
-
-      }	
-
-    .Caja_registro div{
-        margin:  0px;
-        position: absolute;
-    }
-
-    /* formulario */
-    .contenedor_registro{
-        top: -10px;
-        left: -5px;
-       margin: auto;
-    }
-      .contenedor_registro form{
-          position: relative;
-      }
-    }

@@ -8,54 +8,61 @@
 </head>
 <body>
     <main>
-    <h1>Libreria Liam  </h1>
-        <nav>    <!-- Se usa para agrupar enlaces de navegación, como menús o barras de navegación.-->
-            <ul>   <!--Agrupa elementos de lista sin un orden específico.-->
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Libros</a></li>
-                <li><a href="#">Registrar</a></li>
-                </li>             
-            </ul>
-        </nav>
+    <h1>Libreria Liam</h1>
+
+    <nav>    <!-- Se usa para agrupar enlaces de navegación, como menús o barras de navegación.-->
+        <ul>   <!--Agrupa elementos de lista sin un orden específico.-->
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="libros.php">Libros</a></li>
+            <li><a href="registrar.php">Registrar</a></li> 
+            <li><a href="Editar_libros.php">Editar</a></li>
+        </ul>
+    </nav>
+
     <div class="contenedor_de_todo">  
-        
-        <div class="Caja_registro">   <!--Parte del diseño visual, fondo o texto informativo.-->
-            <div class="contenedor_registro">  <!--Contiene el formulario, donde el usuario realmente interactúa.-->
-            <form action="Insertar_conexion.php" method="POST">              <!-- Define el alcance del formulario: Todo lo que esté  es parte del formulario, y los datos que se envían -->
-                <h2>Registrar libros</h2> <!--Más grande y en negrita -->
-                <input type="text" placeholder="titulo"  name ="titulo"> 
-                <input type="text" placeholder="autor"   name="autor">
-                <input type="text" placeholder="editorial" name="editorial">
-                <input type="date" placeholder="fecha de publicacion" name="fecha_de_publicacion">
-                <input type="text" placeholder="categoria" name="categoria">
-                <input type="text" placeholder="descripcion" name ="descripcion">
-                <button type="submit">Registrar</button> 
-            </form>
+
+        <!-- Caja de bienvenida -->
+        <div class="Caja_bienvenida">
+            <h2>Explora nuestra colección de libros Y encuentra tus favoritos</h2>
+        </div>  
+
+        <div class="contenedor_acceso"> 
+            <div class="Caja_acceso"> 
+                <h2>Acceder a libros Registrados</h2>
+                <form action="mostrar_datos.php" method="post">
+                    <button type="submit">Ver Libros</button> 
+                </form>
+            </div>
         </div>
-    </div>
+
+        <div class="contenedor_registro">
+            <div class="Caja_registro1">
+                <h2>Registrar Libros Nuevos</h2>
+                <button id="irARegistrar">Ir a Registrar</button> <!-- Cambiar a un botón normal -->
+            </div>
+        </div>
+
+        
 
     <!-- Formulario de búsqueda por título -->
     <div class="Caja_busqueda">
-    <div class="contenedor_busqueda"> 
-    <form action="mostrar_datos.php" method="post"> 
-        <h2>Buscar Libro</h2>
-            <label for="busqueda">Buscar por Título:</label>
-            <input type="text" id="busqueda" name="busqueda" required>
-            <button type="submit">Buscar</button>
-        </form>
-    </div>
-
-    <div class="Caja_acceso"> 
-        <div class="contenedor_acceso"> 
-            <h1>Libreria LIAAM</h1>
-            <h2>Acceder a libros Registrados</h2>
-            <form action="mostrar_datos.php" method="post">
-                <button type="submit">Acceder</button> 
+        <div class="contenedor_busqueda"> 
+            <form action="mostrar_datos.php" method="post"> 
+                <h2>Buscar Libro</h2>
+                <label for="busqueda">Buscar por Título:</label>
+                <input type="text" id="busqueda" name="busqueda" required>
+                <button type="submit">Buscar</button>
             </form>
         </div>
     </div>
 
     </main>
     <script src="scrip.js"></script>
+    <script>
+        // Agregar evento de clic al botón
+        document.getElementById('irARegistrar').addEventListener('click', function() {
+            document.getElementById('registro').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
